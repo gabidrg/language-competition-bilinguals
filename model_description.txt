@@ -1,1 +1,27 @@
-This is the LanguageCompetitionBilinguals model. Please contact the developers for more information.
+Model: LanguageCompetitionBilinguals.
+Author: Gabriel Dragomir - gabriel.dragomir[at]webikon.com
+Description: Implementation of Minett-Wang language competition model in RePast Symphony 2.0
+
+Model abstract:
+"The mathematical model for language competition developed by Abrams and Strogatz allows the evolution 
+of the numbers of monolingual speakers of two competing languages to be estimated. In this paper, we extend 
+the model to examine the role of bilingualism and social structure, neither of which are addressed 
+in the previous model. We consider the impact of two strategies for language maintenance: 
+(1) adjusting the status of the endangered language; and (2) adjusting the availability of monolingual 
+and bilingual educational resources. The model allows us to predict for which scenarios of intervention 
+language maintenance is more likely to be achieved. Qualitative analysis of the model indicates a set of 
+intervention strategies by which the likelihood of successful maintenance is expected to increase."
+(Minett and Wang 2008)
+
+
+Implementation notes:
+This model respects the micro specifications of the Minett-Wang model as designed by the authors. 
+Additionally, it provides two algorithms for computing language transition probabilities based on: 
+(1) Moore neighborhood; 
+(2) Complete graph. 
+
+References:
+Minett, James W., and William SY Wang. "Modelling endangered languages: The effects of bilingualism and social structure." Lingua 118.1 (2008): 19-45. 
+http://www.sciencedirect.com/science/article/pii/S002438410700071X
+
+

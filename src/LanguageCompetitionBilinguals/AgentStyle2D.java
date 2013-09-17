@@ -3,6 +3,7 @@ package LanguageCompetitionBilinguals;
 import java.awt.Color;
 
 import repast.simphony.visualizationOGL2D.DefaultStyleOGL2D;
+import saf.v3d.scene.VSpatial;
 
 public class AgentStyle2D extends DefaultStyleOGL2D {
 
@@ -17,4 +18,14 @@ public class AgentStyle2D extends DefaultStyleOGL2D {
 			return Color.GREEN;
 		return null;
 	}
+	
+	@Override
+	public VSpatial getVSpatial(Object agent, VSpatial spatial) {
+	    if (spatial == null) {
+	      //spatial = shapeFactory.createCircle(4, 16);
+	      spatial = shapeFactory.createRectangle(8, 8);
+
+	    }
+	    return spatial;
+	  }
 }
