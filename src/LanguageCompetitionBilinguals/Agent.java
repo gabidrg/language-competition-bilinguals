@@ -203,18 +203,6 @@ public class Agent {
 				this.setType(candidateLanguage);
 			}
 		}
-		
-		/*
-		if (this.getOldType() == 3 && this.getType() != 3) {
-			System.out.println("densityY: " + densityY);
-			System.out.println("volatility: " + volatility);
-			System.out.println("yPowA: " + yPowA);
-			System.out.println("Start language: " + this.getOldType());
-			System.out.println(transmissions);
-			System.out.println("End language: " + this.getType());
-			System.out.println("X: " + speakersX + " Y: " + speakersY + " XY: " + speakersXY);
-		}
-		*/
 	}
 	
 	static int selectRandomWeightedArrayList(ArrayList<Transmission> transmissions) {

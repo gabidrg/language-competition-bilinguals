@@ -33,15 +33,8 @@ public class LanguageCompetitionBilingualsModel implements ContextBuilder<Object
 			agentGroups[0] = (numAgents * percentX) / 100;
 			agentGroups[1] = (numAgents * percentY) / 100;
 			agentGroups[2] = numAgents - agentGroups[0] - agentGroups[1];
-			// System.out.println("X:" + agentGroups[0]);
-			// System.out.println("Y:" + agentGroups[1]);
-			// System.out.println("XY:" + agentGroups[2]);
-
 			for (int k = 0; k < agentGroups.length; k++){
 				for(int i=0; i < agentGroups[k]; i++){
-					System.out.println("k:" + k);
-					System.out.println("X:" + agentGroups[k]);
-
 					int agentType = k + 1;
 					Agent agent = new Agent("Agent-"+i, agentType);
 					context.add(agent);
